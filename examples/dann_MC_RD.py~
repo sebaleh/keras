@@ -149,6 +149,7 @@ y_val = to_categorical(y_val, 2)
 
 n_features = X_train.shape[1]
 
+
 # Prep target data
 events_pd = pd.DataFrame(root_numpy.root2array('/home/sebaleh/Documents/analysis/data_tree/LHC15o_nanoAOD_990/pairtree_usnls_small.root','pairtree_usnls',start=0,stop=100000,step=1))
 events_pd = events_pd[events_pd['IsUS']>0.1]        #train only on US pairs
